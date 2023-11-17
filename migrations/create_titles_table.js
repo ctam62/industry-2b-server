@@ -3,6 +3,7 @@ exports.up = function (knex) {
         .createTable("titles", (table) => {
             table.increments("id").primary();
             table.string("title").notNullable();
+            table.string("genres").notNullable();
             table.timestamp("created_at").defaultTo(knex.fn.now());
             table
                 .timestamp("updated_at")
