@@ -25,6 +25,12 @@ exports.seed = async function (knex) {
             name: "Disney+",
             logo: "/logos/disney.svg",
             description: "Disney+ is a family-friendly streaming service with a collection of Disney, Pixar, Marvel, Star Wars, and National Geographic content."
+        },
+        {
+            id: 5,
+            name: "Stream-R",
+            logo: "/logos/streamr.svg",
+            description: "Stream-r is your go-to family-friendly streaming service, providing a secure and delightful experience for enjoying a vast library of movies and TV shows in real-time, all while prioritizing privacy and security through cutting-edge blockchain technology."
         }
     ]);
 };
