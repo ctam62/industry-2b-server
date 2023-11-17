@@ -37,14 +37,14 @@ exports.seed = async function (knex) {
     { id: 33, service_id: 5, title: "The Social Network", genres: "Biography, Drama", rank: 18, img: "/images/TheSocialNetwork.jpg" },
     { id: 34, service_id: 1, title: "The Revenant", genres: "Action, Adventure, Drama, Thriller, Western", rank: 1, img: "/images/TheRevenant.jpg" },
     { id: 35, service_id: 5, title: "Downton Abbey", genres: "Drama, Romance", rank: 2, img: "/images/DowntonAbbey.jpg" },
-    { id: 36, service_id: 5, title: "Avatar", genres: "Action, Adventure, Fantasy, Sci-Fi", rank: 2, img: "/images/Avatar.jpg" },
-    { id: 37, service_id: 5, title: "Narcos", genres: "Biography, Crime, Drama, Thriller", rank: 6, img: "/images/Narcos.jpg" },
-    { id: 38, service_id: 5, title: "The Princess Bride", genres: "Adventure, Family, Fantasy, Romance", rank: 8, img: "/images/ThePrincessBride.jpg" },
-    { id: 39, service_id: 2, title: "Deadpool", genres: "Action, Adventure, Comedy, Sci-Fi", rank: 9, img: "/images/Deadpool.jpg" },
-    { id: 40, service_id: 3, title: "The Witch", genres: "Horror, Mystery", rank: 4, img: "/images/TheWitch.jpg" },
-    { id: 41, service_id: 2, title: "The Office", genres: "Comedy", rank: 6, img: "/images/TheOffice.jpg" },
-    { id: 42, service_id: 3, title: "Handmaid's Tale", genres: "Drama, Sci-Fi, Thriller", rank: 7, img: "/images/HandmaidsTale.jpg" },
-    { id: 43, service_id: 4, title: "Fargo", genres: "Crime, Drama, Thriller", rank: 8, img: "/images/Fargo.jpg" },
-    { id: 44, service_id: 1, title: "Casablanca", genres: "Drama, Romance, War", rank: 9, img: "/images/Casablanca.jpg" }
+    { id: 36, service_id: 5, title: "Avatar", genres: "Action, Adventure, Fantasy, Sci-Fi", rank: 2, img: "/images/Avatar.jpeg" },
+    { id: 37, service_id: 5, title: "Narcos", genres: "Biography, Crime, Drama, Thriller", rank: 6, img: "/images/Narcos.jpeg" },
+    { id: 38, service_id: 5, title: "The Princess Bride", genres: "Adventure, Family, Fantasy, Romance", rank: 8, img: "/images/ThePrincessBride.jpeg" },
+    { id: 39, service_id: 2, title: "Deadpool", genres: "Action, Adventure, Comedy, Sci-Fi", rank: 9, img: "/images/Deadpool.jpeg" },
+    { id: 40, service_id: 3, title: "The Witch", genres: "Horror, Mystery", rank: 4, img: "/images/TheWitch.jpeg" },
+    { id: 41, service_id: 2, title: "The Office", genres: "Comedy", rank: 6, img: "/images/TheOffice.jpeg" },
+    { id: 42, service_id: 3, title: "Handmaid's Tale", genres: "Drama, Sci-Fi, Thriller", rank: 7, img: "/images/HandmaidsTale.jpeg" },
+    { id: 43, service_id: 4, title: "Fargo", genres: "Crime, Drama, Thriller", rank: 8, img: "/images/Fargo.jpeg" },
+    { id: 44, service_id: 1, title: "Casablanca", genres: "Drama, Romance, War", rank: 9, img: "/images/Casablanca.jpeg" }
   ]);
 };
