@@ -1,17 +1,6 @@
 const knex = require("knex")(require("../knexfile"));
 
-const getAllTitles = async (_req, res) => {
-    try {
-        const titles = await knex("titles");
-        res.status(200).json(titles);
-    } catch (error) {
-        res.status(400).json({
-            message: `Error retrieving titles: ${error}`,
-        });
-    }
-};
-
-const getSingleTitle = async (req, res) => {
+const getTitleById = async (req, res) => {
     try {
         const titlesFound = await knex("titles")
             .where({ id: req.params.id });
@@ -31,7 +20,18 @@ const getSingleTitle = async (req, res) => {
     }
 }
 
-const addTitle = async (req, res) => {
+const getAllTitles = async (_req, res) => {
+    try {
+        const titles = await knex("titles");
+        res.status(200).json(titles);
+    } catch (error) {
+        res.status(400).json({
+            message: `Error retrieving titles: ${error}`,
+        });
+    }
+};
+
+const createTitle = async (req, res) => {
     if (!req.body.title) {
         return res.status(400).json({
             message: "Please provide a title in the request",
@@ -98,9 +98,9 @@ const deleteTitle = async (req, res) => {
 }
 
 module.exports = {
+    getTitleById,
     getAllTitles,
-    getSingleTitle,
-    addTitle,
+    createTitle,
     updateTitle,
     deleteTitle,
 };
