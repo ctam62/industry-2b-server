@@ -5,25 +5,25 @@ exports.seed = async function (knex) {
         {
             id: 1,
             name: "Netflix",
-            logo: "/images/netflix.svg",
+            logo: "/logos/netflix.svg",
             description: "Netflix is a popular streaming service offering a wide range of movies, TV shows, and original content."
         },
         {
             id: 2,
             name: "Hulu",
-            logo: "/images/hulu.svg",
+            logo: "/logos/hulu.svg",
             description: "Hulu provides a diverse selection of streaming content, including current-season TV episodes, movies, and original programming."
         },
         {
             id: 3,
             name: "Amazon Prime Video",
-            logo: "/images/amazon.svg",
+            logo: "/logos/amazon.svg",
             description: "Amazon Prime Video offers a vast library of movies, TV shows, and original series, available to Amazon Prime members."
         },
         {
             id: 4,
             name: "Disney+",
-            logo: "/images/disney.svg",
+            logo: "/logos/disney.svg",
             description: "Disney+ is a family-friendly streaming service with a collection of Disney, Pixar, Marvel, Star Wars, and National Geographic content."
         }
     ]);
