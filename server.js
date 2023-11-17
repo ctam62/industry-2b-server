@@ -15,6 +15,9 @@ app.get('/', (_req, res) => {
     res.send("Industry 2b's API");
 });
 
+const titlesRoutes = require("./routes/titles-routes");
+app.use("/api/titles", titlesRoutes);
+
 app.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`)
 });
