@@ -4,11 +4,11 @@ const controller = require('../controllers/titles-controller');
 router
     .route('/')
     .get(controller.getAllTitles)
-    .post(controller.addTitle);
+    .post(controller.createTitle);
 
 router
     .route('/:id')
-    .get(controller.getSingleTitle)
+    .get(controller.getTitleById)
     .delete(controller.deleteTitle)
     .put(controller.updateTitle);
 
