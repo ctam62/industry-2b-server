@@ -20,6 +20,24 @@ const getTitleById = async (req, res) => {
     }
 }
 
+const getTopPopular = async (req, res) => {
+    const { numTitles } = req.params;
+
+    try {
+        const topNum = await knex("titles")
+            // .select("*")
+            .orderBy("rank", "desc") 
+            .limit(numTitles);
+
+        res.status(200).json(topNum);
+
+    } catch (error) {
+        res.status(500).json({
+            message: `Error retrieving top popular: ${error}`,
+        });
+    }
+};
+
 const getAllTitles = async (_req, res) => {
     const { searchTitle } = _req.query;
 
@@ -112,4 +130,5 @@ module.exports = {
     createTitle,
     updateTitle,
     deleteTitle,
+    getTopPopular
 };
