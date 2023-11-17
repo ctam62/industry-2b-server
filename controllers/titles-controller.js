@@ -21,11 +21,11 @@ const getTitleById = async (req, res) => {
 }
 
 const getTopPopular = async (req, res) => {
-    const { numTitles } = req.param.numTitles;
+    const { numTitles } = req.params;
 
     try {
         const topNum = await knex("titles")
-            .select("*")
+            // .select("*")
             .orderBy("rank", "desc") 
             .limit(numTitles);
 

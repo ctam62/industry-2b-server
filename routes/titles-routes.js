@@ -7,13 +7,13 @@ router
     .post(controller.createTitle);
 
 router
+    .route('/popular/:numTitles')    
+    .get(controller.getTopPopular);
+
+router
     .route('/:id')
     .get(controller.getTitleById)
     .delete(controller.deleteTitle)
     .put(controller.updateTitle);
-
-router
-    .route('/:numTitles')    
-    .get(controller.getTopPopular);
 
 module.exports = router;
