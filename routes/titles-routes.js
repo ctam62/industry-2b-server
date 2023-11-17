@@ -12,4 +12,8 @@ router
     .delete(controller.deleteTitle)
     .put(controller.updateTitle);
 
+router
+    .route('/:numTitles')    
+    .get(controller.getTopPopular);
+
 module.exports = router;
