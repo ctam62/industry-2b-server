@@ -21,8 +21,17 @@ const getTitleById = async (req, res) => {
 }
 
 const getAllTitles = async (_req, res) => {
+    const { searchTitle } = _req.query;
+
+    let query = knex("titles");
+
+    if (searchTitle) {
+        query = query.whereRaw('UPPER(title) LIKE ?', [`%${searchTitle.toUpperCase()}%`]);
+    }
+
     try {
-        const titles = await knex("titles");
+        const titles = await query;
+
         res.status(200).json(titles);
     } catch (error) {
         res.status(400).json({
