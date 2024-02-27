@@ -1,6 +1,8 @@
 <img src="https://github.com/drouillarda/industry-2b-client/blob/main/public/favicon.svg" alt="popcorn icon" width="150px">
 
 # YouWatch API
+![youwatch-responsive](https://github.com/ctam62/industry-2b-server/assets/34747168/a828b658-8bff-4018-affc-c3f2ecf691f1)
+
 YouWatch API is the backend server for YouWatch's [frontend application](https://github.com/drouillarda/industry-2b-client). This was part of a hackathon challenge proposed by Roku that involved collaboration with a UX design team with 3 individuals and a Software Engineer team of 4 individuals.
 
 ## Hackathon Challenge
